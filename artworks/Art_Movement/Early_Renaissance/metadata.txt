@@ -1,2 +1,2 @@
-<p align='center'><b 'font-size:150%'>Additional Information</b><br>
+<p align='center'><b style='font-size:150%'>Additional Information</b><br>
 This Early-Renaissance artwork titled <i>The Birth of Venus</i> created by Sandro Botticelli was re-created by using 520 artworks from 1391 artworks belonging to the Early-Renaissance art movement. </p>
