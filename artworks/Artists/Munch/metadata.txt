@@ -1,2 +1,2 @@
-<p><b>Additional Information</b><br>
-This self-portrait of Edvard Munch  was re-created by using 946 artworks out of 5461 artworks created by Munch himself.
+<p align='center'><b 'font-size:150%'>Additional Information</b><br>
+This self-portrait of Edvard Munch  was re-created by using 946 artworks out of 5461 artworks created by Munch himself.</p>

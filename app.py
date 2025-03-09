@@ -9,7 +9,7 @@ st.set_page_config(page_title="Composite Reflection", layout="wide")
 
 # Sidebar: Cluster type selection
 st.sidebar.title("Theme Selection")
-theme_type = st.sidebar.radio("Choose the theme:", ["Artist", "Art Movement", "Food","Real Life Photograph"])
+theme_type = st.sidebar.radio("Choose the theme:", ["Artist", "Art Movement", "Thematic"])
 
 # Load corresponding data based on cluster type
 if theme_type == "Artist":
@@ -45,32 +45,33 @@ elif theme_type == "Art Movement":
         collage_images.append(artwork_path+'Art_Movement/'+arts[i]+'/Collage.jpg')
         videos.append(artwork_path+'Art_Movement/'+arts[i]+'/Video.mp4')
         metadata.append(artwork_path+'Art_Movement/'+arts[i]+'/metadata.txt')
-elif theme_type == "Food":
-    art_list={'Apple':'Apples by Vincent Van Gogh, 1887'}
+elif theme_type == "Thematic":
+    art_list={'Apple':'Food Apples by Vincent Van Gogh, 1887',
+              'Russel_Kirsch':'Russel Kirsch, the Inventor of First Digital Photograph, 2007'}
     arts=list(art_list.keys())
     input_images=[]
     collage_images=[]
     videos=[]
     metadata=[]
     for i in range(len(arts)):
-        input_images.append(artwork_path+'Food/'+arts[i]+'/Input.jpg')
-        collage_images.append(artwork_path+'Food/'+arts[i]+'/Collage.jpg')
-        videos.append(artwork_path+'Food/'+arts[i]+'/Video.mp4')
-        metadata.append(artwork_path+'Food/'+arts[i]+'/metadata.txt')
-elif theme_type == "Real Life Photograph":
-    art_list={'Russel_Kirsch':'Russel Kirsch holding the photograph of his son, 2007'}
-    arts=list(art_list.keys())
-    input_images=[]
-    collage_images=[]
-    videos=[]
-    metadata=[]
-    for i in range(len(arts)):
-        input_images.append(artwork_path+'Photograph/'+arts[i]+'/Input.jpg')
-        collage_images.append(artwork_path+'Photograph/'+arts[i]+'/Collage.jpg')
-        videos.append(artwork_path+'Photograph/'+arts[i]+'/Video.mp4')
-        metadata.append(artwork_path+'Photograph/'+arts[i]+'/metadata.txt')
+        input_images.append(artwork_path+'Thematic/'+arts[i]+'/Input.jpg')
+        collage_images.append(artwork_path+'Thematic/'+arts[i]+'/Collage.jpg')
+        videos.append(artwork_path+'Thematic/'+arts[i]+'/Video.mp4')
+        metadata.append(artwork_path+'Thematic/'+arts[i]+'/metadata.txt')
+# elif theme_type == "Real Life Photograph":
+#     art_list={}
+#     arts=list(art_list.keys())
+#     input_images=[]
+#     collage_images=[]
+#     videos=[]
+#     metadata=[]
+#     for i in range(len(arts)):
+#         input_images.append(artwork_path+'Photograph/'+arts[i]+'/Input.jpg')
+#         collage_images.append(artwork_path+'Photograph/'+arts[i]+'/Collage.jpg')
+#         videos.append(artwork_path+'Photograph/'+arts[i]+'/Video.mp4')
+#         metadata.append(artwork_path+'Photograph/'+arts[i]+'/metadata.txt')
 
-st.title(theme_type+" themed Composite Reflections")
+st.title(theme_type+" based Composite Reflections")
 st.subheader("Different themes can be seen by expanding the sidebar on the left")
 if theme_type=='Real Life Photograph':
     css = '''
@@ -90,12 +91,12 @@ for i in range(len(arts)):
                 image=Image.open(input_images[i])
                 with cols[j]:
                     st.image(image, use_container_width=True)
-                    st.html("<p align='center'><b>Initial Artwork</b></p>")
+                    st.html("<p style='font-size:200%' align='center'><b>Initial Artwork</b></p>")
                     st.divider()
                     video=open(videos[i],"rb").read()
                 with cols[j]:
                     st.video(video)
-                    st.html("<p><b>Video Showcase:</b> Please go through the video to take a look at the constituents of the Composite Reflection.</p>")
+                    st.html("<p align='center'><b style='font-size:150%'>Video Showcase of Composite Reflection</b><br> Please go through the video in fullscreen to take a look at the constituents of the Composite Reflection.</p>")
                     # if theme_type!="Art Movement" and theme_type!="Food":
                     st.divider()
                     meta_info=open(metadata[i],"r").read()
@@ -104,7 +105,7 @@ for i in range(len(arts)):
                 image=Image.open(collage_images[i])
                 with cols[j]:
                     st.image(image, use_container_width=True)
-                    st.html("<p align='center'><b>Composite Reflection</b></p>")
+                    st.html("<p style='font-size:200%' align='center'><b>Composite Reflection</b></p>")
                 
         # if theme_type=="Art Movement" or theme_type=="Food":
         #     meta_info=open(metadata[i],"r").read()
