@@ -1,2 +1,2 @@
-<p align='center'<b style='font-size:150%'>Additional Information</b><br>
+<p align='center'><b style='font-size:150%'>Additional Information</b><br>
 This artwork titled <i>Apples</i> created by Vincent Van Gogh was re-created by using 306 artworks from 2000 artworks containing apples in them. The 2000 artwork dataset was created by using a Large-Vision Language model to annotate the WikiArt collection based on the food that is present in the artwork. Out of the 79496 artworks, 2000 artworks were picked for which the captions included the keyword <i>apple</i>.</p> 
