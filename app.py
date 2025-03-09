@@ -90,7 +90,7 @@ for i in range(len(arts)):
                 image=Image.open(input_images[i])
                 with cols[j]:
                     st.image(image, use_container_width=True)
-                    st.html("<p align='center'> Initial Artwork</p>")
+                    st.html("<p align='center'>Initial Artwork</p>")
             elif j==1:
                 image=Image.open(collage_images[i])
                 with cols[j]:
@@ -100,7 +100,7 @@ for i in range(len(arts)):
                 video=open(videos[i],"rb").read()
                 with cols[j]:
                     st.video(video)
-                    st.html("<p align='center'> Video Showcase</p>")
+                    st.html("<p align='center'>Video Showcase</p>")
                     # if theme_type!="Art Movement" and theme_type!="Food":
                     st.divider()
                     meta_info=open(metadata[i],"r").read()
