@@ -84,7 +84,7 @@ section.main > div:has(~ footer ) {
 for i in range(len(arts)):
     st.header(art_list[arts[i]],divider=True)
     with st.container():
-        cols = st.columns(3)
+        cols = st.columns([0.2,0.6,0.2])
         for j in range (3):
             if j==0:
                 image=Image.open(input_images[i])
