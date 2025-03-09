@@ -101,13 +101,11 @@ for i in range(len(arts)):
                 with cols[j]:
                     st.video(video)
                     st.html("<p align='center'> Video Showcase</p>")
-                    if theme_type!="Art Movement" and theme_type!="Food":
-                        st.divider()
-                        meta_info=open(metadata[i],"r").read()
-                        st.html(meta_info)
-        if theme_type=="Art Movement" or theme_type=="Food":
-            meta_info=open(metadata[i],"r").read()
-            st.html(meta_info)
+                    # if theme_type!="Art Movement" and theme_type!="Food":
+                    st.divider()
+                    meta_info=open(metadata[i],"r").read()
+                    st.html(meta_info)
+        # if theme_type=="Art Movement" or theme_type=="Food":
+        #     meta_info=open(metadata[i],"r").read()
+        #     st.html(meta_info)
 
-# Info on toggle button
-# st.sidebar.info("Use the toggle above to switch between Euclidean and Cosine clusters.")
