@@ -1,2 +1,2 @@
-<p align='center'><b 'font-size:150%'>Additional Information</b><br>
+<p align='center'><b style='font-size:150%'>Additional Information</b><br>
 This photograph of Russel Kirsch, the developer of the first digital photo was re-created by using 1380 artworks from 11442 artworks belonging to the Delaunay artwork collection. The Delaunay collection includes Abstract and non-figurative artworks from 53 different artists.</p>
