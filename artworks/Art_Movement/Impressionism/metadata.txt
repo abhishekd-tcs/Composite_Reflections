@@ -1,2 +1,2 @@
-<p align='center'><b 'font-size:150%'>Additional Information</b><br>
+<p align='center'><b style='font-size:150%'>Additional Information</b><br>
 This Impressionism artwork titled <i>Bal du moulin de la Galette</i> by Pierre-Auguste Renoir was re-created by using 1910 artworks from 13059 artworks belonging to the Impressionism art movement.</p>
