@@ -1,2 +1,2 @@
-<p align='center'><b 'font-size:150%'>Additional Information</b><br>
+<p align='center'><b style='font-size:150%'>Additional Information</b><br>
 This self-portrait of Pablo Picasso was re-created by using 485 artworks out of 743 artworks created by Picasso himself.</p>
