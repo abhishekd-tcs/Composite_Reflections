@@ -84,20 +84,15 @@ section.main > div:has(~ footer ) {
 for i in range(len(arts)):
     st.header(art_list[arts[i]],divider=True)
     with st.container():
-        cols = st.columns([0.2,0.6,0.2])
-        for j in range (3):
+        cols = st.columns([0.2,0.8])
+        for j in range (2):
             if j==0:
                 image=Image.open(input_images[i])
                 with cols[j]:
                     st.image(image, use_container_width=True)
                     st.html("<p align='center'>Initial Artwork</p>")
-            elif j==1:
-                image=Image.open(collage_images[i])
-                with cols[j]:
-                    st.image(image, use_container_width=True)
-                    st.html("<p align='center'>Composite Reflection</p>")
-            else:
-                video=open(videos[i],"rb").read()
+                    st.divider()
+                    video=open(videos[i],"rb").read()
                 with cols[j]:
                     st.video(video)
                     st.html("<p align='center'>Video Showcase</p>")
@@ -105,6 +100,12 @@ for i in range(len(arts)):
                     st.divider()
                     meta_info=open(metadata[i],"r").read()
                     st.html(meta_info)
+            elif j==1:
+                image=Image.open(collage_images[i])
+                with cols[j]:
+                    st.image(image, use_container_width=True)
+                    st.html("<p align='center'>Composite Reflection</p>")
+                
         # if theme_type=="Art Movement" or theme_type=="Food":
         #     meta_info=open(metadata[i],"r").read()
         #     st.html(meta_info)
