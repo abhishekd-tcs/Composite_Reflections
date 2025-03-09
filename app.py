@@ -6,7 +6,16 @@ from PIL import Image
 artwork_path='./artworks/'
 # Set up page configuration
 st.set_page_config(page_title="Composite Reflection", layout="wide")
-
+st.markdown(
+    """
+    <style>
+        section[data-testid="stSidebar"] {
+            width: 10% !important; # Set the width to your desired value
+        }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
 # Sidebar: Cluster type selection
 st.sidebar.title("Theme Selection")
 theme_type = st.sidebar.radio("Choose the theme:", ["Artist", "Art Movement", "Thematic"])
