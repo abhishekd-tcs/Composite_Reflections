@@ -90,12 +90,12 @@ for i in range(len(arts)):
                 image=Image.open(input_images[i])
                 with cols[j]:
                     st.image(image, use_container_width=True)
-                    st.html("<p align='center'>Initial Artwork</p>")
+                    st.html("<p align='center'><b>Initial Artwork</b></p>")
                     st.divider()
                     video=open(videos[i],"rb").read()
                 with cols[j]:
                     st.video(video)
-                    st.html("<p align='center'>Video Showcase</p>")
+                    st.html("<p><b>Video Showcase:</b> Please go through the video to take a look at the constituents of the Composite Reflection.</p>")
                     # if theme_type!="Art Movement" and theme_type!="Food":
                     st.divider()
                     meta_info=open(metadata[i],"r").read()
@@ -104,7 +104,7 @@ for i in range(len(arts)):
                 image=Image.open(collage_images[i])
                 with cols[j]:
                     st.image(image, use_container_width=True)
-                    st.html("<p align='center'>Composite Reflection</p>")
+                    st.html("<p align='center'><b>Composite Reflection</b></p>")
                 
         # if theme_type=="Art Movement" or theme_type=="Food":
         #     meta_info=open(metadata[i],"r").read()
