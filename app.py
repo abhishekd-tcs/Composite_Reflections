@@ -10,7 +10,7 @@ st.markdown(
     """
     <style>
         section[data-testid="stSidebar"] {
-            width: 10%;
+            width: 10% !important; # Set the width to your desired value
         }
     </style>
     """,
