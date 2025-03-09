@@ -1,2 +1,2 @@
-<p align='center'><b 'font-size:150%'>Additional Information</b><br>
+<p align='center'><b style='font-size:150%'>Additional Information</b><br>
 This self-portrait of Salvador Dali was re-created by using 149 artworks out of 600 artworks created by Dali himself.</p>
