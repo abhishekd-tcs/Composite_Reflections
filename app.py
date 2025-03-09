@@ -55,8 +55,8 @@ elif theme_type == "Art Movement":
         videos.append(artwork_path+'Art_Movement/'+arts[i]+'/Video.mp4')
         metadata.append(artwork_path+'Art_Movement/'+arts[i]+'/metadata.txt')
 elif theme_type == "Thematic":
-    art_list={'Apple':'Food Apples by Vincent Van Gogh, 1887',
-              'Russel_Kirsch':'Russel Kirsch, the Inventor of First Digital Photograph, 2007'}
+    art_list={'Apple':'Food: Apples by Vincent Van Gogh, 1887',
+              'Russel_Kirsch':'Photograph: Russel Kirsch, the Inventor of the First Digital Photograph, 2007'}
     arts=list(art_list.keys())
     input_images=[]
     collage_images=[]
