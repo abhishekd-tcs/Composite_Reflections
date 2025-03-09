@@ -95,7 +95,7 @@ for i in range(len(arts)):
                 image=Image.open(collage_images[i])
                 with cols[j]:
                     st.image(image, use_container_width=True)
-                    st.html("<p align='center'> Our Re-creation</p>")
+                    st.html("<p align='center'>Composite Reflection</p>")
             else:
                 video=open(videos[i],"rb").read()
                 with cols[j]:
