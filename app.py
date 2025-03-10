@@ -106,7 +106,7 @@ for i in range(len(arts)):
                     video=videos[i]
                 with cols[j]:
                     st.video(video)
-                    st.html("<p align='center'><b style='font-size:150%'>Video Showcase of Composite Reflection</b><br> Please go through the video in fullscreen to take a look at the constituents of the Composite Reflection &#40;Please watch on the highest quality possible&#41;. </p>")
+                    st.html("<p align='center'><b style='font-size:150%'>Video Showcase of Composite Reflection</b><br> Please view the video in fullscreen &#40;with the highest quality settings&#41;, for a deeper look at the constituents of the Composite Reflections.</p>")
                     # if theme_type!="Art Movement" and theme_type!="Food":
                     st.divider()
                     meta_info=open(metadata[i],"r").read()
