@@ -31,12 +31,12 @@ if theme_type == "Artist":
     arts=list(art_list.keys())
     input_images=[]
     collage_images=[]
-    videos=[]
+    videos=['https://youtu.be/BBl4y_a14WY','https://youtu.be/6Ab4fZKKXkk','https://youtu.be/w_0SUU6m01M','https://youtu.be/e2YMe9CIG68','https://youtu.be/VPGoR0c7i7U']
     metadata=[]
     for i in range(len(arts)):
         input_images.append(artwork_path+'Artists/'+arts[i]+'/Input.jpg')
         collage_images.append(artwork_path+'Artists/'+arts[i]+'/Collage.jpg')
-        videos.append(artwork_path+'Artists/'+arts[i]+'/Video.mp4')
+        # videos.append(artwork_path+'Artists/'+arts[i]+'/Video.mp4')
         metadata.append(artwork_path+'Artists/'+arts[i]+'/metadata.txt')
 elif theme_type == "Art Movement":
     art_list={'Impressionism':'Impressionism: Bal du moulin de la Galette by Pierre-Auguste Renoir, 1876',
@@ -47,12 +47,12 @@ elif theme_type == "Art Movement":
     arts=list(art_list.keys())
     input_images=[]
     collage_images=[]
-    videos=[]
+    videos=['https://youtu.be/QAqCZoiNTuE','https://youtu.be/gGOGeICfDt8','https://youtu.be/Z27m-v-RmNE','https://youtu.be/EXGN9i1Mbsc']
     metadata=[]
     for i in range(len(arts)):
         input_images.append(artwork_path+'Art_Movement/'+arts[i]+'/Input.jpg')
         collage_images.append(artwork_path+'Art_Movement/'+arts[i]+'/Collage.jpg')
-        videos.append(artwork_path+'Art_Movement/'+arts[i]+'/Video.mp4')
+        # videos.append(artwork_path+'Art_Movement/'+arts[i]+'/Video.mp4')
         metadata.append(artwork_path+'Art_Movement/'+arts[i]+'/metadata.txt')
 elif theme_type == "Thematic":
     art_list={'Apple':'Food: Apples by Vincent Van Gogh, 1887',
@@ -60,12 +60,12 @@ elif theme_type == "Thematic":
     arts=list(art_list.keys())
     input_images=[]
     collage_images=[]
-    videos=[]
+    videos=['https://youtu.be/5thuwhsD81o','https://youtu.be/gyIyukLYqAs']
     metadata=[]
     for i in range(len(arts)):
         input_images.append(artwork_path+'Thematic/'+arts[i]+'/Input.jpg')
         collage_images.append(artwork_path+'Thematic/'+arts[i]+'/Collage.jpg')
-        videos.append(artwork_path+'Thematic/'+arts[i]+'/Video.mp4')
+        # videos.append(artwork_path+'Thematic/'+arts[i]+'/Video.mp4')
         metadata.append(artwork_path+'Thematic/'+arts[i]+'/metadata.txt')
 # elif theme_type == "Real Life Photograph":
 #     art_list={}
@@ -102,10 +102,11 @@ for i in range(len(arts)):
                     st.image(image, use_container_width=True)
                     st.html("<p style='font-size:200%' align='center'><b>Initial Artwork</b></p>")
                     st.divider()
-                    video=open(videos[i],"rb").read()
+                    # video=open(videos[i],"rb").read()
+                    video=videos[i]
                 with cols[j]:
                     st.video(video)
-                    st.html("<p align='center'><b style='font-size:150%'>Video Showcase of Composite Reflection</b><br> Please go through the video in fullscreen to take a look at the constituents of the Composite Reflection &#40;Video tested on Google Chrome for all devices&#41;. </p>")
+                    st.html("<p align='center'><b style='font-size:150%'>Video Showcase of Composite Reflection</b><br> Please go through the video in fullscreen to take a look at the constituents of the Composite Reflection &#40;Please watch on the highest quality possible&#41;. </p>")
                     # if theme_type!="Art Movement" and theme_type!="Food":
                     st.divider()
                     meta_info=open(metadata[i],"r").read()
