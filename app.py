@@ -81,7 +81,7 @@ elif theme_type == "Thematic":
 #         metadata.append(artwork_path+'Photograph/'+arts[i]+'/metadata.txt')
 
 st.title(theme_type+" based Composite Reflections")
-st.subheader("Composite Reflections as a method of artwork creation wherein we reimagine an artwork as composed from other constituent artworks. The constituents bear an intimate relation with the main subject.")
+st.subheader("Composite Reflections is a method of artwork creation wherein we reimagine an artwork as composed from other constituent artworks. The constituents bear an intimate relation with the main subject.")
 st.subheader("← Different themes can be seen by expanding the sidebar on the left")
 if theme_type=='Real Life Photograph':
     css = '''
